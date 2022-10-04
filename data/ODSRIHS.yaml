@@ -1,0 +1,19 @@
+# YOLOv5 ? by Ultralytics, GPL-3.0 license
+# PASCAL VOC dataset http://host.robots.ox.ac.uk/pascal/VOC by University of Oxford
+# Example usage: python train.py --data VOC2007.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── VOC2007  ← downloads here
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# path: ../autodl-tmp/yolov7_odsrihs  # dataset root dir
+train: ../autodl-tmp/yolov7_odsrihs/train.txt
+val: ../autodl-tmp/yolov7_odsrihs/val.txt
+test: ../autodl-tmp/yolov7_odsrihs/test.txt
+
+# Classes
+nc: 14  # number of classes
+names: ['trashcan', 'slippers', 'wire', 'socks',
+        'carpet', 'book', 'feces', 'curtain', 'stool', 'bed', 'sofa', 'close stool', 'table', 'cabinet']
